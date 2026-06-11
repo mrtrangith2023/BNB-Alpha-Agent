@@ -36,11 +36,24 @@ def portfolio():
 
 @app.get("/signals")
 def signals():
-    return {
-        "token": "BNB",
-        "signal": "BUY",
-        "confidence": 82
+    return [
+    {
+      "token": "BNB",
+      "signal": "BUY",
+      "confidence": 82
+    },
+    {
+      "token": "CAKE",
+      "signal": "HOLD",
+      "confidence": 67
+    },
+    {
+      "token": "ETH",
+      "signal": "SELL",
+      "confidence": 71
     }
+  ]
+    
 
 @app.get("/health")
 def health():
