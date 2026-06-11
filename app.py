@@ -62,3 +62,12 @@ def health():
     return {
         "status": "healthy"
     }
+
+@app.get("/agent")
+def agent():
+    return {
+        "name": "BNB Alpha Agent",
+        "status": "active",
+        "strategy": "momentum",
+        "decision": "BUY BNB"
+    }
