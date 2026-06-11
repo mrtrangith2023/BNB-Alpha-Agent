@@ -1,23 +1,41 @@
 # BNB Alpha Agent
 
-AI-powered trading assistant for the BNB Chain ecosystem.
+Autonomous Trading Agent built on BNB Chain.
 
 ## Features
 
-- AI market analysis
-- On-chain intelligence
-- Risk assessment
-- Trading insights
-- Portfolio monitoring
+- Market Signal API
+- Risk Management API
+- Portfolio Monitoring API
+- FastAPI Backend
 
-## Tech Stack
+## API Endpoints
 
-- Python
-- FastAPI
-- OpenAI
-- LangChain
-- BNB Chain
+GET /
+GET /market
+GET /risk
+GET /portfolio
 
-## Vision
+## Run
 
-Help crypto users make smarter trading decisions using AI-powered blockchain analytics.
+pip install -r requirements.txt
+
+python -m uvicorn app:app --reload
+
+## Architecture
+
+FastAPI
+→ Market Engine
+→ Risk Engine
+→ Portfolio Engine
+
+## Roadmap
+
+Phase 1
+- Market monitoring
+
+Phase 2
+- AI signal generation
+
+Phase 3
+- Autonomous execution
