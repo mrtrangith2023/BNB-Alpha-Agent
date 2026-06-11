@@ -16,6 +16,10 @@ BNB Alpha Agent is a lightweight autonomous trading agent prototype that provide
 
 ![Signals API](screenshots/signals-api.PNG)
 
+### Agent Status API
+
+![Agent API](screenshots/agent-api.PNG)
+
 ## Features
 
 * Market Signal Generation
