@@ -6,6 +6,16 @@ Autonomous Trading Agent built on BNB Chain.
 
 BNB Alpha Agent is a lightweight autonomous trading agent prototype that provides market signals, risk assessment, portfolio monitoring, and agent status APIs through a FastAPI backend.
 
+## Screenshots
+
+### Swagger UI
+
+![Swagger UI](screenshots/swagger-home.PNG)
+
+### Trading Signals API
+
+![Signals API](screenshots/signals-api.PNG)
+
 ## Features
 
 * Market Signal Generation
@@ -43,17 +53,17 @@ Autonomous Agent
 
 ## Run Locally
 
-bash
+```bash
 pip install -r requirements.txt
 
 python -m uvicorn app:app --reload
-
+```
 
 Swagger UI:
 
-text
+```text
 http://127.0.0.1:8000/docs
-
+```
 
 ## Roadmap
 
