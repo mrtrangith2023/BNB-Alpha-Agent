@@ -33,3 +33,17 @@ def portfolio():
         "status": "monitoring",
         "positions": 2
     }
+
+@app.get("/signals")
+def signals():
+    return {
+        "token": "BNB",
+        "signal": "BUY",
+        "confidence": 82
+    }
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
