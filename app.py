@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from datetime import datetime, timezone
 
 app = FastAPI(
     title="BNB Alpha Agent",
@@ -37,6 +38,7 @@ def portfolio():
 @app.get("/signals")
 def signals():
     return {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "signals": [
             {
                 "token": "BNB",
