@@ -71,5 +71,6 @@ def agent():
         "name": "BNB Alpha Agent",
         "status": "active",
         "strategy": "momentum",
-        "decision": "BUY BNB"
+        "decision": "BUY BNB",
+        "updated_at": datetime.now(timezone.utc).isoformat()
     }
