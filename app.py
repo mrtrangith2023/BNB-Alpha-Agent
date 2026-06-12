@@ -74,3 +74,11 @@ def agent():
         "decision": "BUY BNB",
         "updated_at": datetime.now(timezone.utc).isoformat()
     }
+
+@app.get("/version")
+def version():
+    return {
+        "project": "BNB Alpha Agent",
+        "version": "0.1.0",
+        "release": "MVP"
+    }
